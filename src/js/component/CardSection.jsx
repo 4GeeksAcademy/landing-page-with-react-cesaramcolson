@@ -27,9 +27,9 @@ const CardSection = () => {
 
     return (
         <div className="container">
-            <div className="row">
+            <div className="row-md d-md-flex justify-content-center w-100">
                 {cards.map((card, index) => (
-                    <div className="col-3 mb-3" key={index}>
+                    <div className="col-md-3 m-3 mb-4" key={index}>
                         <Card title={card.title} text={card.text} imgSrc={card.imgSrc} />
                     </div>
                 ))}
